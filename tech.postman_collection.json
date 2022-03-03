@@ -1,0 +1,474 @@
+{
+	"info": {
+		"_postman_id": "326dad5b-9943-4a74-b857-4698433ba99f",
+		"name": "Tech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "All user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/one/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"one",
+								"5"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jeff Melgar\",\r\n    \"phone\": \"12345678\",\r\n    \"username\": \"jeff1024\",\r\n    \"email\": \"jeff.melgar@gmail.com\",\r\n    \"born\": \"27/05/1997\",\r\n    \"password\": \"holamundo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"name\": \"Jeff Melgar\",\r\n        \"phone\": \"12345678\",\r\n        \"username\": \"jeff1024\",\r\n        \"born\": \"27/05/1997\",\r\n        \"email\": \"jeff.melgar@gmail.com\",\r\n        \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/update/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"update",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "all product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/product/all/10/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"all",
+								"10",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "one product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/product/one/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"one",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": \"ABCDEF\",\r\n    \"name\": \"Coca Cola\",\r\n    \"amount\": 100,\r\n    \"price\": 23.50,\r\n    \"description\": \"Son Coca colas en latas\",\r\n    \"image\": \"https://d1cft8rz0k7w99.cloudfront.net/n/a/2/e/3/a2e3d9c68e87ad068122a86202c7778a4f3a6860_Beverages_87577_01.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": \"ABCDEF\",\r\n    \"name\": \"Coca Cola\",\r\n    \"amount\": 50,\r\n    \"price\": 23.50,\r\n    \"description\": \"Son Coca colas en latas\",\r\n    \"image\": \"https://d1cft8rz0k7w99.cloudfront.net/n/a/2/e/3/a2e3d9c68e87ad068122a86202c7778a4f3a6860_Beverages_87577_01.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/product/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/product/delete/23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"delete",
+								"23"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find product ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkxNjAxMX0.52pjtB3Vxrh9yQOPGoF78ZyHpsdYBF3_KH7uB49Djjg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/product/find/name/coca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product",
+								"find",
+								"name",
+								"coca"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jeff.melgar@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recuperate email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jeff.melgar@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/email/recuperate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"email",
+						"recuperate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "link recuperate email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/email/recuperate/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkyMDM5MiwiZXhwIjoxNjQ1OTIxMzUyfQ.CGiKyoFyEDd0rQIpvAgvdoEZn3EP7vu9wqcExDNqQdU",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"email",
+						"recuperate",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhVG9rZW4iOnsiaWQiOjUsImVtYWlsIjoiamVmZi5tZWxnYXJAZ21haWwuY29tIn0sImlhdCI6MTY0NTkyMDM5MiwiZXhwIjoxNjQ1OTIxMzUyfQ.CGiKyoFyEDd0rQIpvAgvdoEZn3EP7vu9wqcExDNqQdU"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
